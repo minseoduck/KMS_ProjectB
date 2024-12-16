@@ -1,0 +1,19 @@
+# Unity 불필요한 파일/폴더
+[Ll]ibrary/
+[Tt]emp/
+[Ll]ogs/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+UserSettings/
+
+# Visual Studio 불필요한 파일
+.vs/
+*.csproj
+*.sln
+*.user
+*.vsconfig
+
+# 기타
+*.log
+*.tmp
