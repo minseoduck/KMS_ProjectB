@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent (typeof(PlayerController_A))]
 [RequireComponent(typeof(Gun_Controller_A))]
-public class Player_A : MonoBehaviour
+public class Player_A : LivingEntity
 // 플레이어 움직임 입력 받자
 {
     Camera viewCamera;
@@ -12,8 +12,9 @@ public class Player_A : MonoBehaviour
     PlayerController_A controller_A;
     Gun_Controller_A gun_Controller_A;
 
-    private void Start()
+    protected override void Start()
     {
+        base.Start();
         controller_A = GetComponent<PlayerController_A>();
         gun_Controller_A = GetComponent<Gun_Controller_A>();
         viewCamera = Camera.main;
