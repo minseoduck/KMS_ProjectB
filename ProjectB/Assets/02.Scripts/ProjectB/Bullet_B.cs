@@ -37,7 +37,7 @@ public class Bullet_B : MonoBehaviour
         Character_B character = collision.gameObject.GetComponent<Character_B>();
         if (character != null)
         {
-            character.TakeDamage(bulletData.damage); // ScriptableObject에서 데미지 참조
+            character.TakeDamage(bulletData.damage);
         }
 
         pool.ReturnObject(gameObject);
