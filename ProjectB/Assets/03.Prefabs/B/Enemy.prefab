@@ -228,7 +228,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c774202c071844d41a51c5ba62cb1dfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthData: {fileID: 11400000, guid: 0cd01fdcbea5d4940bd6216e0b9e9696, type: 2}
   player: {fileID: 0}
+  attackDistance: 1.5
+  attackDamage: 10
+  attackCooldown: 2
   updateRate: 0.25
 --- !u!195 &8552654825301708645
 NavMeshAgent:

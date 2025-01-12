@@ -381,6 +381,7 @@
 "Assets/02.Scripts/ProjectB/PlayerAttack_B.cs"
 "Assets/02.Scripts/ProjectB/PlayerController_B.cs"
 "Assets/02.Scripts/ProjectB/Player_B.cs"
+"Assets/02.Scripts/ProjectB/Spawner_B.cs"
 "Assets/02.Scripts/ProjectB/Stat_B.cs"
 "Assets/02.Scripts/Utility.cs"
 -langversion:9.0

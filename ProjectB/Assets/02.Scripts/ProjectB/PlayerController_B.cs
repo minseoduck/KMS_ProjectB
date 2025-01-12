@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController_B : MonoBehaviour
+public class PlayerController_B : Character_B
 {
     public float moveSpeed = 5f;
     public float rotationSpeed = 10f;
@@ -38,7 +38,9 @@ public class PlayerController_B : MonoBehaviour
     {
         // 회전 
         RotateTowards(inputManager.MouseWorldPosition);
+        // OnDeath 이벤트에 사망 처리 로직 추가
        
+        OnDeath += HandlePlayerDeath;
         if (Input.GetMouseButton(0))
         {
             gun_Controller_B.Shoot();
@@ -52,7 +54,11 @@ public class PlayerController_B : MonoBehaviour
         Vector3 heightCorrectedPoint = new Vector3(targetPosition.x, transform.position.y, targetPosition.z);
         transform.LookAt(heightCorrectedPoint);
     }
-
+    private void HandlePlayerDeath()
+    {
+        Debug.Log("플레이어 사망! 게임 오버 처리 필요");
+        // 추가적인 사망 처리 (UI 표시, 게임 오버 등)
+    }
 
 
 
